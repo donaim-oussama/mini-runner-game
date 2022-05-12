@@ -1,0 +1,51 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #292727;
+  height: 100vh;
+  width: 100vw;
+}
+
+  :root {
+    --text-color: #F0F0F0; 
+    --text-color2: #acaaaa;
+    --secondary-color: #717171;
+    --dark-shadow: #1d1c1c;
+    --light-shadow: #333333;
+    --bright-color: #F36F9E;
+
+  }
+
+.app > p {
+  color: var(--text-color);
+  font-size: 28px;
+  padding: 30px;
+}
+
+.app > img {
+  width: 100px;
+  margin: 30px;
+}
+
+.canvas-wrapper {
+  top: 10%;
+  height: 600px;
+  margin: 0px 50px;
+  background-color: #292727;
+  position: relative;
+  border: 20px solid var(--secondary-color);
+  box-shadow: 5px 5px 8px var(--dark-shadow), -5px -5px 8px var(--dark-shadow);
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .app > img {
+    width: 250px;
+  }
+  .app > p {
+    font-size: 38px;
+  }
+}

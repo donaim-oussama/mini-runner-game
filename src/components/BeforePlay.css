@@ -1,0 +1,150 @@
+.landing {
+    color: var(--text-color);
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .overlay {
+    filter: opacity(0.2);
+  }
+  
+  .landing > h1 {
+    margin-bottom: 10px;
+  }
+  
+  .landing > h2 {
+    font-size: 1.1em;
+  }
+  
+  .landing > h1 {
+    text-shadow: 5px 5px 5px var(--dark-shadow);
+  }
+  
+  .landing > h2, .user-card > h2 {
+    color: var(--text-color2);
+    text-shadow: 5px 5px 5px var(--dark-shadow);
+  }
+  
+  .landing > h2 > img {
+    width: 80px;
+  }
+  
+  .landing-button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin: 20px 0px;
+    width: 50%;
+    box-shadow: 5px 8px 10px var(--dark-shadow), -5px 10px 10px var(--dark-shadow);
+    transition: all .5s ease;
+  }
+  
+  .landing-button > h2, .landing-button {
+    transition: all .5s ease;
+  }
+  
+  .landing-button > h2 {
+    text-shadow: 2px 2px 2px var(--light-shadow);
+  }
+  
+  /* Pseudo classes for the 'enter' button */
+  .landing-button > h2:hover {
+    opacity: 0.9;
+  }
+  
+  .landing-button:hover {
+    opacity: 0.8;
+  }
+  
+  .landing-button:active {
+    box-shadow: none;
+  }
+  
+  #choose-player {
+    color: var(--text-color);
+  }
+  
+  .wibble {
+    animation: wibble 0.8s cubic-bezier(.36,.07,.19,.97) both;
+  }
+  
+  @keyframes wibble {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+      color: var(--bright-color);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+  .users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .user-card {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .user-card > img {
+    width: 80%;
+    filter: brightness(0.95) drop-shadow(5px 0px 5px var(--dark-shadow));
+    -webkit-filter: brightness(0.95) drop-shadow(5px 5px 5px var(--dark-shadow));
+  }
+  .users > .user-card {
+    transition: all .3s ease;
+  }
+  
+  .users > .user-card:hover {
+    -webkit-filter: brightness(1.1) drop-shadow(10px -10px 5px var(--dark-shadow));
+    filter: brightness(1.1) drop-shadow(10px -10px 5px var(--dark-shadow));
+  }
+  
+  @media screen and (min-width: 720px) {
+  
+    h1 {
+      margin-bottom: 0px;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+    .user-card {
+      width: unset;
+    }
+  
+    .user-card > img {
+    width: 128px;
+    height: 138px;
+    object-fit: cover;
+     object-position: 101% 0;
+    }
+  
+    .landing > h2 > img {
+      width: 100px;
+    }
+  }

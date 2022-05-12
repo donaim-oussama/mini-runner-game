@@ -1,0 +1,35 @@
+.points-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  margin-top: auto;
+  margin-left: 22px;
+  height: 510px;
+  width: 180px;
+  box-shadow: 5px 5px 5px var(--dark-shadow);  
+}
+
+.points-box > img {
+  width: 70px;
+  object-fit: none;
+  object-position: 5% 0%;
+  filter: drop-shadow(1px 1px 1px var(--light-shadow))
+}
+
+.points-box > h2 {
+  color: var(--text-color);
+  text-align: center;
+  text-shadow: 2px 2px 2px var(--light-shadow);
+}
+
+.score-title {
+  text-transform: uppercase;
+}
+
+.scores {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+

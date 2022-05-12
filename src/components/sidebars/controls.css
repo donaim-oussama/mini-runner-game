@@ -1,0 +1,42 @@
+.controls-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  margin-top: auto;
+  margin-right: 22px;
+  height: 500px;
+  width: 180px;
+  box-shadow: -5px 5px 5px var(--dark-shadow);  
+}
+
+.controls-text {
+  padding: 10px 10px;
+  line-height: 26px;
+}
+
+.controls-text > h3 {
+  margin-top: 10%;
+  color: var(--text-color);
+  text-align: center;
+  text-shadow: 2px 2px 2px var(--light-shadow);
+  transition: all .5s ease;
+}
+
+.controls-text > img {
+  width: 100px;
+}
+
+.button {
+  cursor: pointer;
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 10px;
+  text-shadow: 2px 2px 2px var(--light-shadow);
+  transition: all .5s ease;
+}
+  
+.button:hover {
+  opacity: 0.6;
+}
